@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222 83% 28%;
+    --primary-foreground: 210 40% 98%; 
+
+    --secondary: 217 74% 32%; 
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 214 83% 45%; 
+    --accent-foreground: 210 40% 98%;
+
+    --muted: 223 13% 87%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 85% 43%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 80%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222 83% 28%;
+    --radius: 0.25rem; /
+
+    --chart-1: 222 83% 28%;
+    --chart-2: 217 74% 32%;
+    --chart-3: 214 83% 45%;
+    --chart-4: 0 85% 43%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: 223 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 222 83% 18%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 217 74% 23%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 214 83% 34%;
+    --accent-foreground: 210 40% 98%;
+
+    --muted: 223 13% 20%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html, body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-inter);
+  }
+
+  .police-bg-dark {
+    @apply bg-blue-950;
+  }
+
+  .police-bg-accent {
+    @apply bg-blue-600;
+  }
+
+  .police-text {
+    @apply text-gray-100;
+  }
+
+  .police-alert {
+    @apply bg-red-600 text-white;
+  }
+
+  .sidebar-item {
+    @apply flex items-center gap-3 px-3 py-2 rounded-md text-gray-300 hover:bg-blue-900 transition-colors;
+  }
+
+  .sidebar-item.active {
+    @apply bg-blue-900 text-white;
+  }
+}
