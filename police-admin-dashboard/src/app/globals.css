@@ -11,8 +11,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222 83% 28%;
-    --primary-foreground: 210 40% 98%; 
+    --primary: 222 83% 28%; 
+    --primary-foreground: 210 40% 98%;
 
     --secondary: 217 74% 32%; 
     --secondary-foreground: 210 40% 98%;
@@ -29,7 +29,7 @@
     --border: 214.3 31.8% 80%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222 83% 28%;
-    --radius: 0.25rem; /
+    --radius: 0.25rem; 
 
     --chart-1: 222 83% 28%;
     --chart-2: 217 74% 32%;
@@ -96,10 +96,10 @@
   }
 
   .sidebar-item {
-    @apply flex items-center gap-3 px-3 py-2 rounded-md text-gray-300 hover:bg-blue-900 transition-colors;
+    @apply flex items-center gap-3 px-3 py-2 rounded-sm text-gray-100 hover:bg-blue-800 transition-colors;
   }
 
   .sidebar-item.active {
-    @apply bg-blue-900 text-white;
+    @apply bg-blue-800 font-medium;
   }
 }

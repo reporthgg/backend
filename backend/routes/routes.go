@@ -40,6 +40,7 @@ func SetupRoutes(router *gin.Engine, h *handlers.Handler) {
 
 			secured.GET("/chat/messages", h.GetChatMessages)
 		}
+		api.GET("/police-stations/nearest", h.FindNearestPoliceStation)
 	}
 
 	router.GET("/ws/chat", h.WebSocketHandler)
